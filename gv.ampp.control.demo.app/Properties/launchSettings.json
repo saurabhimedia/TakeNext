@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "gv.ampp.control.sml.app": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\Projects\\SaurabhiMedia\\TakeNext-RossTalk\\server\\gv.ampp.control.demo.app\\Config\\Config_Rosstalk.xml\r\n"
+    }
+  }
+}
