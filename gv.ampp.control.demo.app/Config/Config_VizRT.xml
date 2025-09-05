@@ -1,0 +1,19 @@
+<configuration>
+<!--  `TIME_BETWEEN_COMMANDS`parameter defines the minimum time interval (in milliseconds) between consecutive cue tone actions. If a new action is detected within this duration, it will be ignored to prevent unintended rapid triggers. -->
+  <ConfigEntry Key="TIME_BETWEEN_COMMANDS" Value="2000"/>
+<!--  value should be in milliseconds  -->
+<!-- ConfigEntry Key="Working Directory" Value=".\"/ -->
+  <ConfigEntry Key="Application Name" Value="IP_Trigger_Wiz"/><!--  Applicaiton name, same will be used for logging file name  -->
+  <ConfigEntry Key="LogGoLiveTimeStamp"  Value="Yes"/> <!--  if Enabled will log the timestamps of commands sent/Response received-->
+  <ConfigEntry Key="Switcher IP" Value="192.168.201.39"/>
+  <ConfigEntry Key="Switcher Port" Value="6100"/>
+  <ConfigEntry Key="NetworkId" Value="xyz"/>
+  <ConfigEntry Key="DELAY" Value="1000"/>
+  <ConfigEntry Key="INITIAL_HANDSHAKE_COMMAND" Value="GV VERSION\0"/> <!--  the string if set will send initial handshake during connection establishment -->
+  <ConfigEntry Key="ACK_REGX" Value="^GV([\s\S]*)$"/> <!--  RegEx to validate the acks are proper or not for both initial handshake and commands-->
+  <!--  Maps of all the input trigger strings vs what actual command to be sent! Please be carefull whether need to send CRLLF or LF. it should be included in the Value part -->
+  <ConfigEntry Key="BREAK-IN" Value="GV RENDERER*STAGE*DIRECTOR*squeeze START\0"/>
+  <ConfigEntry Key="BREAK-OUT" Value="GV RENDERER*STAGE*DIRECTOR*squeeze START REVERSE\0"/>
+  <ConfigEntry Key="BACK_IN-START" Value="GV RENDERER*STAGE*DIRECTOR*BACK_IN START\0"/>
+  <ConfigEntry Key="BACK_IN-REVERSE" Value="GV RENDERER*STAGE*DIRECTOR*BACK_IN START REVERSE\0"/>
+</configuration>

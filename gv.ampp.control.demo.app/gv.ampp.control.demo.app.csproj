@@ -1,0 +1,159 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+	<VersionPrefix>1.1.0</VersionPrefix>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="gv.ampp.control.service\**" />
+    <EmbeddedResource Remove="gv.ampp.control.service\**" />
+    <None Remove="gv.ampp.control.service\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Program_MirrorBootstrap.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="appsettings.json" />
+    <None Remove="Markdown\channelstate.md" />
+    <None Remove="Markdown\config.md" />
+    <None Remove="Markdown\getstate.md" />
+    <None Remove="Markdown\golive.md" />
+    <None Remove="Markdown\metrics.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <EmbeddedResource Include="Markdown\golive.md" />
+    <EmbeddedResource Include="Markdown\metrics.md" />
+    <EmbeddedResource Include="Markdown\getstate.md" />
+    <EmbeddedResource Include="Markdown\channelstate.md" />
+    <EmbeddedResource Include="Markdown\config.md" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Reference Include="gv.ampp.control.sdk">
+      <HintPath>..\..\..\..\TakeNextC#App\TakeNext\server\gv.ampp.control.demo.app\bin\Release\net6.0\gv.ampp.control.sdk.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.Client">
+      <HintPath>..\..\..\..\TakeNextC#App\TakeNext\server\gv.ampp.control.demo.app\bin\Release\net6.0\Microsoft.AspNet.SignalR.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Connections.Abstractions">
+      <HintPath>..\..\..\..\TakeNextC#App\TakeNext\server\gv.ampp.control.demo.app\bin\Release\net6.0\Microsoft.AspNetCore.Connections.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http.Connections.Client">
+      <HintPath>..\..\..\..\TakeNextC#App\TakeNext\server\gv.ampp.control.demo.app\bin\Release\net6.0\Microsoft.AspNetCore.Http.Connections.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http.Connections.Common">
+      <HintPath>..\..\..\..\TakeNextC#App\TakeNext\server\gv.ampp.control.demo.app\bin\Release\net6.0\Microsoft.AspNetCore.Http.Connections.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.SignalR.Client">
+      <HintPath>..\..\..\..\TakeNextC#App\TakeNext\server\gv.ampp.control.demo.app\bin\Release\net6.0\Microsoft.AspNetCore.SignalR.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.SignalR.Client.Core">
+      <HintPath>..\..\..\..\TakeNextC#App\TakeNext\server\gv.ampp.control.demo.app\bin\Release\net6.0\Microsoft.AspNetCore.SignalR.Client.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.SignalR.Common">
+      <HintPath>..\..\..\..\TakeNextC#App\TakeNext\server\gv.ampp.control.demo.app\bin\Release\net6.0\Microsoft.AspNetCore.SignalR.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.SignalR.Protocols.Json">
+      <HintPath>..\..\..\..\TakeNextC#App\TakeNext\server\gv.ampp.control.demo.app\bin\Release\net6.0\Microsoft.AspNetCore.SignalR.Protocols.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration">
+      <HintPath>..\..\..\..\TakeNextC#App\TakeNext\server\gv.ampp.control.demo.app\bin\Release\net6.0\Microsoft.Extensions.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions">
+      <HintPath>..\..\..\..\TakeNextC#App\TakeNext\server\gv.ampp.control.demo.app\bin\Release\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Binder">
+      <HintPath>..\..\..\..\TakeNextC#App\TakeNext\server\gv.ampp.control.demo.app\bin\Release\net6.0\Microsoft.Extensions.Configuration.Binder.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.CommandLine">
+      <HintPath>..\..\..\..\TakeNextC#App\TakeNext\server\gv.ampp.control.demo.app\bin\Release\net6.0\Microsoft.Extensions.Configuration.CommandLine.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.EnvironmentVariables">
+      <HintPath>..\..\..\..\TakeNextC#App\TakeNext\server\gv.ampp.control.demo.app\bin\Release\net6.0\Microsoft.Extensions.Configuration.EnvironmentVariables.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.FileExtensions">
+      <HintPath>..\..\..\..\TakeNextC#App\TakeNext\server\gv.ampp.control.demo.app\bin\Release\net6.0\Microsoft.Extensions.Configuration.FileExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Json">
+      <HintPath>..\..\..\..\TakeNextC#App\TakeNext\server\gv.ampp.control.demo.app\bin\Release\net6.0\Microsoft.Extensions.Configuration.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection">
+      <HintPath>..\..\..\..\TakeNextC#App\TakeNext\server\gv.ampp.control.demo.app\bin\Release\net6.0\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions">
+      <HintPath>..\..\..\..\TakeNextC#App\TakeNext\server\gv.ampp.control.demo.app\bin\Release\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Features">
+      <HintPath>..\..\..\..\TakeNextC#App\TakeNext\server\gv.ampp.control.demo.app\bin\Release\net6.0\Microsoft.Extensions.Features.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileProviders.Abstractions">
+      <HintPath>..\..\..\..\TakeNextC#App\TakeNext\server\gv.ampp.control.demo.app\bin\Release\net6.0\Microsoft.Extensions.FileProviders.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileProviders.Physical">
+      <HintPath>..\..\..\..\TakeNextC#App\TakeNext\server\gv.ampp.control.demo.app\bin\Release\net6.0\Microsoft.Extensions.FileProviders.Physical.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileSystemGlobbing">
+      <HintPath>..\..\..\..\TakeNextC#App\TakeNext\server\gv.ampp.control.demo.app\bin\Release\net6.0\Microsoft.Extensions.FileSystemGlobbing.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging">
+      <HintPath>..\..\..\..\TakeNextC#App\TakeNext\server\gv.ampp.control.demo.app\bin\Release\net6.0\Microsoft.Extensions.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions">
+      <HintPath>..\..\..\..\TakeNextC#App\TakeNext\server\gv.ampp.control.demo.app\bin\Release\net6.0\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options">
+      <HintPath>..\..\..\..\TakeNextC#App\TakeNext\server\gv.ampp.control.demo.app\bin\Release\net6.0\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives">
+      <HintPath>..\..\..\..\TakeNextC#App\TakeNext\server\gv.ampp.control.demo.app\bin\Release\net6.0\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.SystemEvents">
+      <HintPath>..\..\..\..\TakeNextC#App\TakeNext\server\gv.ampp.control.demo.app\bin\Release\net6.0\Microsoft.Win32.SystemEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\TakeNextC#App\TakeNext\server\gv.ampp.control.demo.app\bin\Release\net6.0\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration.ConfigurationManager">
+      <HintPath>..\..\..\..\TakeNextC#App\TakeNext\server\gv.ampp.control.demo.app\bin\Release\net6.0\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Common">
+      <HintPath>..\..\..\..\TakeNextC#App\TakeNext\server\gv.ampp.control.demo.app\bin\Release\net6.0\System.Drawing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipelines">
+      <HintPath>..\..\..\..\TakeNextC#App\TakeNext\server\gv.ampp.control.demo.app\bin\Release\net6.0\System.IO.Pipelines.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.ProtectedData">
+      <HintPath>..\..\..\..\TakeNextC#App\TakeNext\server\gv.ampp.control.demo.app\bin\Release\net6.0\System.Security.Cryptography.ProtectedData.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Permissions">
+      <HintPath>..\..\..\..\TakeNextC#App\TakeNext\server\gv.ampp.control.demo.app\bin\Release\net6.0\System.Security.Permissions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web">
+      <HintPath>..\..\..\..\TakeNextC#App\TakeNext\server\gv.ampp.control.demo.app\bin\Release\net6.0\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json">
+      <HintPath>..\..\..\..\TakeNextC#App\TakeNext\server\gv.ampp.control.demo.app\bin\Release\net6.0\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Channels">
+      <HintPath>..\..\..\..\TakeNextC#App\TakeNext\server\gv.ampp.control.demo.app\bin\Release\net6.0\System.Threading.Channels.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Extensions">
+      <HintPath>..\..\..\..\TakeNextC#App\TakeNext\server\gv.ampp.control.demo.app\bin\Release\net6.0\System.Windows.Extensions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+
+</Project>

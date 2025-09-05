@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "gv.ampp.control.sml.app": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\Projects\\SaurabhiMedia\\TakeNext\\server\\gv.ampp.control.demo.app\\Config\\Config_Wizart.xml\r\n"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+<configuration>
+  <ConfigEntry Key="DELAY" Value="1000"/>
+  <ConfigEntry Key="TIME_BETWEEN_COMMANDS" Value="2000"/>
+  <ConfigEntry Key="LIVE-PCR1-IN" Value="GPI 1:1"/>
+  <ConfigEntry Key="LIVE-PCR1-OUT" Value="GPI 2:1"/>
+  <ConfigEntry Key="LIVE-PCR2-IN" Value="GPI 3:1"/>
+  <ConfigEntry Key="LIVE-PCR3-OUT" Value="GPI 4:1"/>
+</configuration>

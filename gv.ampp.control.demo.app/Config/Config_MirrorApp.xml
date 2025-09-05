@@ -1,0 +1,21 @@
+<configuration>
+<!--  `TIME_BETWEEN_COMMANDS`parameter defines the minimum time interval (in milliseconds) between consecutive cue tone actions. If a new action is detected within this duration, it will be ignored to prevent unintended rapid triggers. -->
+  <ConfigEntry Key="TIME_BETWEEN_COMMANDS" Value="2000"/>
+<!--  value should be in milliseconds  -->
+<!-- ConfigEntry Key="Working Directory" Value=".\"/ -->
+  <ConfigEntry Key="Application Name" Value="HA Take Replicator"/><!--  Applicaiton name, same will be used for logging file name  -->
+  <ConfigEntry Key="LogGoLiveTimeStamp"  Value="Yes"/> <!--  if Enabled will log the timestamps of commands sent/Response received-->
+  <ConfigEntry Key="Switcher IP" Value="192.168.201.39"/>
+  <ConfigEntry Key="Switcher Port" Value="6100"/>
+  <ConfigEntry Key="DELAY" Value="1000"/>
+  <!--ConfigEntry Key="INITIAL_HANDSHAKE_COMMAND" Value="GV VERSION\0"/--> <!--  the string if set will send initial handshake during connection establishment -->
+  <!--ConfigEntry Key="ACK_REGX" Value="^GV([\s\S]*)$"/--> <!--  RegEx to validate the acks are proper or not for both initial handshake and commands-->
+
+  <Channels>
+	<ChannelEntry Name="CH01_MASTER" NetworkId="2b2cd547-abd3-4d0e-ba6a-bd02feddefb6" PLATFORMURI="https://sky-nz-apac-prd.gvampp.com" PLATFORMAPIKEY= "NTRkMzg5NzQ4NDBkNDgzY2IzNGE2M2JjMWE0ODJmODE6Ry94NHJoVDhaUU1xR1JNZWRCYnEwVGMrMVJMSTFzREFWbDJQU1h5ZU1mRzJpaXgzZHZ4Vm5vcVF5Si9EL00xMXZHU1E1QU5Qb2g0V3JnV2FpUllvZHc9PQ=="/>
+	<ChannelEntry Name="CH01_SLAVE" NetworkId="2b2cd547-abd3-4d0e-ba6a-bd02feddefb7" PLATFORMURI="https://sky-nz-apac-prd.gvampp.com" PLATFORMAPIKEY= "NTRkMzg5NzQ4NDBkNDgzY2IzNGE2M2JjMWE0ODJmODE6Ry94NHJoVDhaUU1xR1JNZWRCYnEwVGMrMVJMSTFzREFWbDJQU1h5ZU1mRzJpaXgzZHZ4Vm5vcVF5Si9EL00xMXZHU1E1QU5Qb2g0V3JnV2FpUllvZHc9PQ=="/>
+	<ChannelEntry Name="CH02_MASTER" NetworkId="2b2cd547-abd3-4d0e-ba6a-bd02feddefb8" PLATFORMURI="https://sky-nz-apac-prd.gvampp.com" PLATFORMAPIKEY= "NTRkMzg5NzQ4NDBkNDgzY2IzNGE2M2JjMWE0ODJmODE6Ry94NHJoVDhaUU1xR1JNZWRCYnEwVGMrMVJMSTFzREFWbDJQU1h5ZU1mRzJpaXgzZHZ4Vm5vcVF5Si9EL00xMXZHU1E1QU5Qb2g0V3JnV2FpUllvZHc9PQ=="/>
+	<ChannelEntry Name="CH02_SLAVE" NetworkId="2b2cd547-abd3-4d0e-ba6a-bd02feddefb9" PLATFORMURI="https://sky-nz-apac-prd.gvampp.com" PLATFORMAPIKEY= "NTRkMzg5NzQ4NDBkNDgzY2IzNGE2M2JjMWE0ODJmODE6Ry94NHJoVDhaUU1xR1JNZWRCYnEwVGMrMVJMSTFzREFWbDJQU1h5ZU1mRzJpaXgzZHZ4Vm5vcVF5Si9EL00xMXZHU1E1QU5Qb2g0V3JnV2FpUllvZHc9PQ=="/>
+  </Channels>
+  <MirrorMap>CH01_MASTER=CH01_SLAVE;CH02_MASTER=CH02_SLAVE</MirrorMap>
+</configuration>
