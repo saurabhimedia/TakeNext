@@ -1,0 +1,18 @@
+curl 'https://skmampp1.local/ampp/control/api/v1/control/commit' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IkZFRjFDQjk2NDE1M0YyMEIzNDI2QjNGNjRFMkEzRUYzMUE5QjYyRDQiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJfdkhMbGtGVDhnczBKclAyVGlvLTh4cWJZdFEifQ.eyJuYmYiOjE3NTY4ODcxMDAsImV4cCI6MTc1NjkwMTUwMCwiaXNzIjoiaHR0cHM6Ly9za21hbXBwMS5sb2NhbC9pZGVudGl0eSIsImF1ZCI6Imh0dHBzOi8vc2ttYW1wcDEubG9jYWwvaWRlbnRpdHkvcmVzb3VyY2VzIiwiY2xpZW50X2lkIjoiNmI5ZWQ2NmFjZTBkNDZkNGJiNWU3YTI5OTUyNzYyM2MiLCJzdWIiOiJhYzJhYzQxN2VkMmQ0YzlmYWYxYTJlMzg4YmI3NGZmNSIsImF1dGhfdGltZSI6MTc1Njg3NzAyNSwiaWRwIjoibG9jYWwiLCJhY2MiOiJza21hbXBwMSIsInJvbGUiOlsiY2x1c3Rlci5hZG1pbiIsImFkbWluIiwiZ3Vlc3QiLCJiaWxsaW5nLmFkbWluIiwic2VjcmV0cy5hZG1pbiIsInN1YnNjcmlwdGlvbi5hZG1pbiIsImRhc2hib2FyZC5lZGl0b3IiLCJkYXNoYm9hcmQudXNlciIsImxpY2Vuc2luZy5hZG1pbiIsInN0b3JlLmFkbWluIl0sImp0aSI6IkJEMDNBNDc4OTE2NkIzMUVENjk4RTdFMDg2MUExNDMzIiwic2lkIjoiNTY5OUQ5ODc3QjRFMDAzNkMyRTEzOEMzNzQyNkNDQUQiLCJpYXQiOjE3NTY4ODcxMDAsInNjb3BlIjpbInBsYXRmb3JtIiwiY2x1c3Rlci5yZWFkb25seSIsImNsdXN0ZXIiLCJvcGVuaWQiXSwiYW1yIjpbInB3ZCJdfQ.ZGfHqmmNltf_fOlOjKRhe8jo4mesvJISjGyWbUwcYJKBRLbSX1sLFyU7ktkYf_yHFipK8fbsBSKSqZ3X8q250fB8KOSobYf6SL7MnAeWGp76wBBzqaLoD-WZAyXyqyyf9R0ioqHBX2r9TtTQA9d-mu96zM16PBwDQDkts3ZnfqcHLtElOnT1C6ZyvqNJRtFOSY5PogcHIkPfSsTAHaYlTOhWa3eDVcpGJPvYI-x-BoG0HlSzJnibS3AvjWcS70WCFPsguiaqAXZjxuLz-DN2HnqHKr7N6RnWr9S707qihsgs5A7lcGpzt3_yZEjQBBsv3sVcnTcVPP2skPwZjHIiiw' \
+  -H 'content-type: application/json' \
+  -b 'sticky=414d887ba2dd5f45' \
+  -H 'origin: https://skmampp1.local' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://skmampp1.local/ampp/control/overview' \
+  -H 'sec-ch-ua: "Not;A=Brand";v="99", "Google Chrome";v="139", "Chromium";v="139"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36' \
+  -H 'x-correlation-id: da0408e0-18eb-4674-b43d-0853cbeb1375' \
+  --data-raw '{"application":"Channel","command":"cuenext","workload":"1eb1db6d-02d6-4d59-98a4-004163b2805e","formData":"{}","reconKey":"AMPP-Control-Service-Key"}'

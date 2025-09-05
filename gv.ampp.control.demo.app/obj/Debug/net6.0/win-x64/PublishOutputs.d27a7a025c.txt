@@ -1,0 +1,2 @@
+C:\Projects\SaurabhiMedia\TakeNext-RossTalk\server\gv.ampp.control.demo.app\bin\Debug\net6.0\win-x64\publish\appsettings.json
+C:\Projects\SaurabhiMedia\TakeNext-RossTalk\server\gv.ampp.control.demo.app\bin\Debug\net6.0\win-x64\publish\gv.ampp.control.demo.app.exe

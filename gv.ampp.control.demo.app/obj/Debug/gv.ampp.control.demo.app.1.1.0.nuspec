@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>gv.ampp.control.demo.app</id>
+    <version>1.1.0</version>
+    <authors>gv.ampp.control.demo.app</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net6.0">
+        <dependency id="Gv.Ampp.Control.Sdk" version="1.2.0.20" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <contentFiles>
+      <files include="any/net6.0/appsettings.json" buildAction="Content" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="G:\AmppControlSdk-0.9.22\csharp\server\gv.ampp.control.demo.app\bin\Debug\net6.0\gv.ampp.control.demo.app.runtimeconfig.json" target="lib\net6.0\gv.ampp.control.demo.app.runtimeconfig.json" />
+    <file src="G:\AmppControlSdk-0.9.22\csharp\server\gv.ampp.control.demo.app\bin\Debug\net6.0\gv.ampp.control.demo.app.dll" target="lib\net6.0\gv.ampp.control.demo.app.dll" />
+    <file src="G:\AmppControlSdk-0.9.22\csharp\server\gv.ampp.control.demo.app\appsettings.json" target="content\appsettings.json" />
+    <file src="G:\AmppControlSdk-0.9.22\csharp\server\gv.ampp.control.demo.app\appsettings.json" target="contentFiles\any\net6.0\appsettings.json" />
+  </files>
+</package>
